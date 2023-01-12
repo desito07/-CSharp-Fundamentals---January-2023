@@ -16,6 +16,16 @@ namespace Intro_and_Basic_Syntax
             int hoursMore = minTotalAll / 60;
             int minTotalMore = minTotalAll % 60;
 
+            if (minTotalMore >= 60)
+            {
+                hoursMore++;
+                minTotalMore -= 60;
+            }
+
+            if (hoursMore == 24)
+            {
+                hoursMore = 0;
+            }
 
 
             if (minTotalMore < 10)
