@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Intro_and_Basic_Syntax
 {
@@ -7,17 +7,27 @@ namespace Intro_and_Basic_Syntax
         static void Main(string[] args)
         {
             int num = int.Parse(Console.ReadLine());
-            int division = 0;
+            
 
-            if(num % 2 == 0 || num % 3 == 0 || num % 6 == 0)
+            if(num % 10 == 0)
             {
-                division = 6;
-                Console.WriteLine($"The number is divisible by {division}");
+                Console.WriteLine($"The number is divisible by 10");
             }
-            else if(num % 2 == 0 || num % 10 == 0)
+            else if(num % 7 == 0)
             {
-                division = 10;
-                Console.WriteLine($"The number is divisible by {division}");
+                Console.WriteLine($"The number is divisible by 7");
+            }
+            else if (num % 6 == 0)
+            {
+                Console.WriteLine($"The number is divisible by 6");
+            }
+            else if (num % 3 == 0)
+            {
+                Console.WriteLine($"The number is divisible by 3");
+            }
+            else if (num % 2 == 0)
+            {
+                Console.WriteLine($"The number is divisible by 2");
             }
             else
             {
