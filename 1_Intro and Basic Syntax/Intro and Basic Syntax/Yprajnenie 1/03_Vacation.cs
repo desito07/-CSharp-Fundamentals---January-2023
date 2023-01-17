@@ -10,68 +10,69 @@ namespace Intro_and_Basic_Syntax
             string people = Console.ReadLine();
             string day = Console.ReadLine();
 
-            double price = 0;
+            double price = 0.0;
+
 
             if (day == "Friday")
             {
                 if (people == "Students")
                 {
-                    price = count * 8.45;
+                    price = 8.45;
                 }
                 else if (people == "Business")
                 {
-                    price = count * 10.90;
+                    price = 10.90;
                 }
                 else if (people == "Regular")
                 {
-                    price = count * 15;
+                    price = 15;
                 }
             }
             else if (day == "Saturday")
             {
                 if (people == "Students")
                 {
-                    price = count * 9.80;
+                    price = 9.80;
                 }
                 else if (people == "Business")
                 {
-                    price = count * 15.60;
+                    price = 15.60;
                 }
                 else if (people == "Regular")
                 {
-                    price = count * 20;
+                    price = 20;
                 }
             }
             else if (day == "Sunday")
             {
                 if (people == "Students")
                 {
-                    price = count * 10.46;
+                    price = 10.46;
                 }
                 else if (people == "Business")
                 {
-                    price = count * 16;
+                    price = 16;
                 }
                 else if (people == "Regular")
                 {
-                    price = count * 22.50;
+                    price = 22.50;
                 }
             }
-
             if (people == "Students" && count >= 30)
-                {
-                    price -= price * 0.15;
-                }
+            {
+                price -= price * 0.15;
+            }
             else if (people == "Business" && count >= 100)
-                {
-                    price = 0;
-                }
+            {
+                count -= 10;
+            }
             else if (people == "Regular" && count >= 10 && count <= 20)
-                {
-                    price -= price * 0.05;
-                }
-            Console.Write($"Total price: {price:f2}");
-            
+            {
+                price -= price * 0.05;
+            }
+            double totalPrice = price * count;
+            Console.Write($"Total price: {totalPrice:f2}");
+
         }
     }
 }
