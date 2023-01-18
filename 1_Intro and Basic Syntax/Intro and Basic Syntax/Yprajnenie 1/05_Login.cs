@@ -11,7 +11,7 @@ namespace Intro_and_Basic_Syntax
 
             for (int i = username.Length - 1; i >= 0; i--)
             {
-                char currentChar = username[i];
+                char current = username[i];
                 password += username[i];
 
             }
