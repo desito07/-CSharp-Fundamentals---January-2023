@@ -7,11 +7,10 @@ namespace Intro_and_Basic_Syntax
         static void Main(string[] args)
         {
             string username = Console.ReadLine();
-            string password = string.Empty;
+            string password = "";
 
             for (int i = username.Length - 1; i >= 0; i--)
             {
-                char current = username[i];
                 password += username[i];
 
             }
@@ -35,4 +34,5 @@ namespace Intro_and_Basic_Syntax
         }
     }
 }
+
 
