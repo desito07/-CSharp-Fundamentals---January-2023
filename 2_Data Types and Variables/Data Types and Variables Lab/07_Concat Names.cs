@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Data_Types_and_Variables_Lab
 {
@@ -6,7 +6,11 @@ namespace Data_Types_and_Variables_Lab
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            string firstName = Console.ReadLine();
+            string secondName = Console.ReadLine();
+            string delimiter = Console.ReadLine();
+
+            Console.WriteLine($"{firstName}{delimiter}{secondName}");
         }
     }
 }
