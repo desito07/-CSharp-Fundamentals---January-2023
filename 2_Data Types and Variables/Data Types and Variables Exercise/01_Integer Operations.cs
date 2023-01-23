@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Data_Types_and_Variables_Exercise
 {
@@ -6,7 +6,14 @@ namespace Data_Types_and_Variables_Exercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int first = int.Parse(Console.ReadLine());
+            int second = int.Parse(Console.ReadLine());
+            int third = int.Parse(Console.ReadLine());
+            int fourth = int.Parse(Console.ReadLine());
+
+            int sum = ((first + second) / third) * fourth;
+
+            Console.WriteLine(sum);
         }
     }
 }
