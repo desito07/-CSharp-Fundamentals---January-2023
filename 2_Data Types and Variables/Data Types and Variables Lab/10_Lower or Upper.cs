@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Data_Types_and_Variables_Lab
 {
@@ -6,7 +6,15 @@ namespace Data_Types_and_Variables_Lab
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            char ch = char.Parse(Console.ReadLine());
+            if(ch >= 65 && ch <= 90)
+            {
+                Console.WriteLine("upper-case");
+            }
+            else
+            {
+                Console.WriteLine("lower-case");
+            }
         }
     }
 }
