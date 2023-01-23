@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Data_Types_and_Variables_Lab
 {
@@ -6,7 +6,11 @@ namespace Data_Types_and_Variables_Lab
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            char fisrtLetter = char.Parse(Console.ReadLine());
+            char secondLetter = char.Parse(Console.ReadLine());
+            char thirdLetter = char.Parse(Console.ReadLine());
+
+            Console.WriteLine($"{thirdLetter} {secondLetter} {fisrtLetter}");
         }
     }
 }
