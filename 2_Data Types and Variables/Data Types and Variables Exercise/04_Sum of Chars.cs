@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Data_Types_and_Variables_Exercise
 {
@@ -6,7 +6,19 @@ namespace Data_Types_and_Variables_Exercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int num = int.Parse(Console.ReadLine());
+            int sum = 0;
+
+            for (int i = 1; i <= num; i++)
+            {
+                char current = char.Parse(Console.ReadLine());
+                sum += current;
+                //if(current >= 65 && current <= 122)
+                //{
+                //    sum += current; 
+                //}
+            }
+            Console.WriteLine($"The sum equals: {sum}");
         }
     }
 }
