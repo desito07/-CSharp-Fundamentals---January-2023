@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Data_Types_and_Variables_Exercise
 {
@@ -6,7 +6,13 @@ namespace Data_Types_and_Variables_Exercise
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            int first = int.Parse(Console.ReadLine());
+            int second = int.Parse(Console.ReadLine());
+
+            for (int i = first; i <= second; i++)
+            {
+                Console.Write($"{(char)i} ");
+            }
         }
     }
 }
