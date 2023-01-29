@@ -1,13 +1,11 @@
-﻿//using System;
 
-//namespace Arrays_Lab
-//{
-//    class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            Console.WriteLine("Hello World!");
-//        }
-//    }
-//}
+string[] letters = Console.ReadLine()
+    .Split(" ")
+    .ToArray();
+
+letters = letters
+    .Reverse()
+    .ToArray();
+
+Console.WriteLine(string.Join(" ",letters));
 
