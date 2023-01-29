@@ -143,3 +143,19 @@ for (int i = 0; i < numbers.Length; i++)
 //.Split - ще раздели елементите по някакъв начин един от друг
 //.Select - ще ги парсне от стринг в числа
 //.ToArray -  ще ги направи в стринг
+
+// =========================================
+  .Join
+
+string[] names = { "Pesho", "Stoyan", "Ivan" };
+
+Console.WriteLine(string.Join(", ", names));
+
+ // ==========================================
+
+string[] numbers = { "40", "30", "20", "10" };
+
+foreach (var current in numbers)
+{
+    Console.WriteLine(current);
+}
