@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _01_Mid_Exam_Tasks
@@ -30,4 +30,5 @@ namespace _01_Mid_Exam_Tasks
         }
     }
 }
+
 
