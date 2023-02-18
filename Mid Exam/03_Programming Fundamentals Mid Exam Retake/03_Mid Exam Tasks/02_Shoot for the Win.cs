@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Linq;
 
 namespace _03_Mid_Exam_Tasks
@@ -33,6 +33,7 @@ namespace _03_Mid_Exam_Tasks
 
                 int value = numbers[index];
                 counter++;
+                numbers[index] = -1;
 
                 for (int i = 0; i < numbers.Length; i++)
                 {
@@ -47,7 +48,7 @@ namespace _03_Mid_Exam_Tasks
 
                 }
             }
-            Console.WriteLine("Shot targets: {0} -> {1}", counter, string.Join(" ", numbers));
+            Console.WriteLine($"Shot targets: {counter} -> {string.Join(" ", numbers)}");
         }
     }
 }
